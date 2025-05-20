@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Convite Especial</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fffaf5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background-color: #fa009a;
+      padding: 30px 20px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
+      color: #fff;
+    }
+    p {
+      font-size: 1.3em;
+    }
+    p strong {
+      color: #fff;
+    }
+
+    .detalhes {
+      padding: 20px;
+    }
+    .detalhes p strong {
+      font-size: 1.1em;
+      color: #000000;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px;
+    }
+    .galeria img {
+      width: 99%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .botoes {
+      margin: 30px;
+    }
+    .botoes a,
+    .botoes button {
+      display: inline-block;
+      margin: 10px;
+      padding: 30px 30px;
+      font-size: 3.2em;
+      color: white;
+      background-color: #67067a;
+      text-decoration: none;
+      border: none;
+      border-radius: 10px;
+      transition: background 0.3s;
+      cursor: pointer;
+    }
+    .botoes a:hover,
+    .botoes button:hover {
+      background-color: #d45544;
+    }
+
+    .lista-presentes-container {
+      display: none;
+      margin-top: 10px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+    .lista-presentes-container div {
+      padding: 10px 15px;
+      border-bottom: 1px solid #eee;
+      font-size: 1em;
+    }
+    .lista-presentes-container div:last-child {
+      border-bottom: none;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 1em;
+      color: #777;
+      padding: 20px;
+    }
+
+    /* Responsividade extra */
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1em;
+      }
+      .botoes a,
+      .botoes button {
+        font-size: 1.5em;
+        padding: 30px 60px;
+      }
+    }
+  </style>
+</head>
+
+
+  <header>
+    <h1>Você está convidado!</h1>
+    <p>Para o aniversário de <strong>Marleide Menezes</strong> 🎉</p>
+  </header>
+
+  <section class="detalhes">
+    <p>🗓 <strong>Data:</strong> 29 de Maio de 2025</p>
+    <p>🕒 <strong>Horário:</strong> 19h00</p>
+    <p>📍 <strong>Local:</strong> <a href="https://maps.app.goo.gl/V1R9PSzk8UCNaWfp7" target="_blank">Rua coronel salgado
+1490 Liberdade - Manacapuru</a></p>
+  </section>
+
+  <section class="galeria">
+    
+    <img src="b.jpg" alt="Foto 2">
+    
+    <img src="d.jpg" alt="Foto 4">
+    <img src="e.jpg" alt="Foto 5">
+    <img src="f.jpg" alt="Foto 6">
+    <img src="g.jpg" alt="Foto 7">
+  </section>
+
+ 
+
+  <section class="botoes">
+    <a href="https://wa.me/559291465060?text=Confirmo+presença+no+seu+aniversário+Marleide+Menezes" target="_blank">Confirmar Presença</a>
+      <a href="https://link.mercadopago.com.br/marleide40" target="_blank">Enviar Presente via Pix</a>
+    
+    
+ 
+    <button onclick="toggleLista()">Ver Lista de Presentes</button>
+
+    <div class="lista-presentes-container" id="listaPresentes">
+      <div>🎁 Vestido nº38</div>
+      <div>🎁 Bolsa</div>
+            <div>🎁 Blusa tamanho M</div>
+                  <div>🎁 Perfume Árabe ou Francês, pode ser miniatura </div>
+      <div>🎁 A seu critério</div>
+            <div>🎁 presente via pix</div>
+
+      
+      </d>
+  </section>
+
+  <footer>
+    
+    💖 Sua presença será muito Especial!</p>
+  </footer>
+
+  
+  <script>
+   
+      
+
+    function toggleLista() {
+      const lista = document.getElementById("listaPresentes");
+      lista.style.display = lista.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
